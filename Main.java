@@ -17,4 +17,12 @@ public class Main {
             throw new RuntimeException(e);
         }
     }
+
+    static class MyProgram extends IProgram{
+
+        @Override
+        void log(String message) {
+            System.out.println("This message " + message + " is logged.");
+        }
+    }
 }
